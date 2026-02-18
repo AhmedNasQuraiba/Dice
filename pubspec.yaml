@@ -27,3 +27,9 @@ flutter:
     - family: PlayfairDisplay Regular
       fonts:
         - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+    - family: IBM Plex Serif
+      fonts:
+        - asset: assets/fonts/IBMPlexSerif-Regular.ttf
+    - family: Inria Serif
+      fonts:
+        - asset: assets/fonts/InriaSerif-Regular.ttf

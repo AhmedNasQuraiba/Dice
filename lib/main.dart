@@ -43,18 +43,19 @@ class _DiceState extends State<Dice> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 169, 64, 64),
+      backgroundColor: HSLColor.fromAHSL(1, 0, 0, 0.87).toColor(),
       appBar: AppBar(
         title: Text(
           "DICE",
           style: TextStyle(
-            fontSize: 45,
-            color: Color.fromARGB(255, 210, 210, 210),
-            fontFamily: "Sancreek Regular",
+            letterSpacing: 2,
+            fontSize: 42,
+            color: HSLColor.fromAHSL(1, 0, 0, 1).toColor(),
+            fontFamily: "Inria Serif",
           ),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 105, 21, 21),
+        backgroundColor: HSLColor.fromAHSL(1, 0, 0, 0).toColor(),
       ),
       body: Center(
         child: Padding(
@@ -63,25 +64,24 @@ class _DiceState extends State<Dice> {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  border: Border.all(width: 3, color: Colors.black),
-                  borderRadius: BorderRadius.circular(26),
+                  border: Border.all(width: 1.5, color: Colors.black),
+                  borderRadius: BorderRadius.circular(19),
                 ),
                 child: Image.asset(
                   "assets/images/faces/$diceNum.png",
-                  width: 250,
-                  height: 250,
+                  width: 200,
+                  height: 200,
                 ),
               ),
               SizedBox(height: 10),
               Column(
                 children: [
                   Text(
-                    "${didRoll ? "You Rolled" : "LET'S ROLL!"}",
+                    "${didRoll ? "YOU ROLLED" : "LET'S ROLL!"}",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 50,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Sancreek Regular",
+                      fontFamily: "IBM Plex Serif",
                     ),
                   ),
                   Text(
@@ -89,13 +89,13 @@ class _DiceState extends State<Dice> {
                     style: TextStyle(
                       height: 1,
                       color: Color.fromARGB(255, 12, 12, 12),
-                      fontSize: 150,
-                      fontFamily: "Sancreek Regular",
+                      fontSize: 135,
+                      fontFamily: "IBM Plex Serif",
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 25),
+              SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -107,7 +107,12 @@ class _DiceState extends State<Dice> {
                     child: FilledButton(
                       style: FilledButton.styleFrom(
                         padding: EdgeInsets.fromLTRB(30, 0, 30, 0),
-                        backgroundColor: Color.fromARGB(255, 210, 210, 210),
+                        backgroundColor: HSLColor.fromAHSL(
+                          1,
+                          0,
+                          0,
+                          0,
+                        ).toColor(),
                       ),
                       onPressed: buttonPressed
                           ? null
@@ -162,9 +167,10 @@ class _DiceState extends State<Dice> {
                         child: Text(
                           "ROLL",
                           style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: "Sancreek Regular",
-                            fontSize: 45,
+                            letterSpacing: 2,
+                            color: HSLColor.fromAHSL(1, 0, 0, 1).toColor(),
+                            fontFamily: "Inria Serif",
+                            fontSize: 35,
                           ),
                         ),
                       ),
@@ -174,14 +180,19 @@ class _DiceState extends State<Dice> {
               ),
               SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                     child: FilledButton(
                       style: FilledButton.styleFrom(
                         padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                        backgroundColor: Color.fromARGB(255, 210, 210, 210),
+                        backgroundColor: HSLColor.fromAHSL(
+                          1,
+                          0,
+                          0,
+                          0,
+                        ).toColor(),
                         minimumSize: Size(65, 25),
                         side: BorderSide(width: 1.75),
                       ),
@@ -191,11 +202,10 @@ class _DiceState extends State<Dice> {
                         });
                       },
                       child: Text(
-                        "Counter",
+                        "   Counter   ",
                         style: TextStyle(
-                          color: Colors.black,
-                          fontFamily: "PlayfairDisplay Regular",
-                          fontWeight: FontWeight.bold,
+                          color: HSLColor.fromAHSL(1, 0, 0, 1).toColor(),
+                          fontFamily: "IBM Plex Serif",
                         ),
                       ),
                     ),
