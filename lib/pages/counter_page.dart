@@ -29,6 +29,7 @@ class _CounterPageState extends State<CounterPage> {
     return Scaffold(
       backgroundColor: HSLColor.fromAHSL(1, 0, 0, 0.87).toColor(),
       appBar: AppBar(
+        leading: BackButton(color: HSLColor.fromAHSL(1, 0, 0, 1).toColor()),
         title: Text(
           "DICE",
           style: TextStyle(
