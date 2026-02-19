@@ -27,18 +27,19 @@ class _CounterPageState extends State<CounterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 169, 64, 64),
+      backgroundColor: HSLColor.fromAHSL(1, 0, 0, 0.87).toColor(),
       appBar: AppBar(
         title: Text(
           "DICE",
           style: TextStyle(
-            fontSize: 45,
-            color: Color.fromARGB(255, 210, 210, 210),
-            fontFamily: "Sancreek Regular",
+            fontSize: 42,
+            letterSpacing: 2,
+            color: HSLColor.fromAHSL(1, 0, 0, 1).toColor(),
+            fontFamily: "Inria Serif",
           ),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 105, 21, 21),
+        backgroundColor: HSLColor.fromAHSL(1, 0, 0, 0).toColor(),
       ),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -54,7 +55,7 @@ class _CounterPageState extends State<CounterPage> {
                         "1s rolled:",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "PlayfairDisplay Regular",
+                          fontFamily: "IBM Plex Serif",
                           fontSize: 30,
                         ),
                       ),
@@ -64,7 +65,7 @@ class _CounterPageState extends State<CounterPage> {
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
                           fontSize: 100,
-                          fontFamily: "Sancreek Regular",
+                          fontFamily: "IBM Plex Serif",
                         ),
                       ),
                     ],
@@ -76,7 +77,7 @@ class _CounterPageState extends State<CounterPage> {
                         "2s rolled:",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "PlayfairDisplay Regular",
+                          fontFamily: "IBM Plex Serif",
                           fontSize: 30,
                         ),
                       ),
@@ -86,7 +87,7 @@ class _CounterPageState extends State<CounterPage> {
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
                           fontSize: 100,
-                          fontFamily: "Sancreek Regular",
+                          fontFamily: "IBM Plex Serif",
                         ),
                       ),
                     ],
@@ -101,7 +102,7 @@ class _CounterPageState extends State<CounterPage> {
                         "3s rolled:",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "PlayfairDisplay Regular",
+                          fontFamily: "IBM Plex Serif",
                           fontSize: 30,
                         ),
                       ),
@@ -111,7 +112,7 @@ class _CounterPageState extends State<CounterPage> {
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
                           fontSize: 100,
-                          fontFamily: "Sancreek Regular",
+                          fontFamily: "IBM Plex Serif",
                         ),
                       ),
                     ],
@@ -123,7 +124,7 @@ class _CounterPageState extends State<CounterPage> {
                         "4s rolled:",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "PlayfairDisplay Regular",
+                          fontFamily: "IBM Plex Serif",
                           fontSize: 30,
                         ),
                       ),
@@ -133,7 +134,7 @@ class _CounterPageState extends State<CounterPage> {
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
                           fontSize: 100,
-                          fontFamily: "Sancreek Regular",
+                          fontFamily: "IBM Plex Serif",
                         ),
                       ),
                     ],
@@ -148,7 +149,7 @@ class _CounterPageState extends State<CounterPage> {
                         "5s rolled:",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "PlayfairDisplay Regular",
+                          fontFamily: "IBM Plex Serif",
                           fontSize: 30,
                         ),
                       ),
@@ -158,7 +159,7 @@ class _CounterPageState extends State<CounterPage> {
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
                           fontSize: 100,
-                          fontFamily: "Sancreek Regular",
+                          fontFamily: "IBM Plex Serif",
                         ),
                       ),
                     ],
@@ -170,7 +171,7 @@ class _CounterPageState extends State<CounterPage> {
                         "6s rolled:",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "PlayfairDisplay Regular",
+                          fontFamily: "IBM Plex Serif",
                           fontSize: 30,
                         ),
                       ),
@@ -180,7 +181,7 @@ class _CounterPageState extends State<CounterPage> {
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
                           fontSize: 100,
-                          fontFamily: "Sancreek Regular",
+                          fontFamily: "IBM Plex Serif",
                         ),
                       ),
                     ],
