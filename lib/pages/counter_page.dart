@@ -64,7 +64,7 @@ class _CounterPageState extends State<CounterPage> {
                         style: TextStyle(
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
-                          fontSize: 100,
+                          fontSize: 64,
                           fontFamily: "IBM Plex Serif",
                         ),
                       ),
@@ -86,7 +86,7 @@ class _CounterPageState extends State<CounterPage> {
                         style: TextStyle(
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
-                          fontSize: 100,
+                          fontSize: 64,
                           fontFamily: "IBM Plex Serif",
                         ),
                       ),
@@ -111,7 +111,7 @@ class _CounterPageState extends State<CounterPage> {
                         style: TextStyle(
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
-                          fontSize: 100,
+                          fontSize: 64,
                           fontFamily: "IBM Plex Serif",
                         ),
                       ),
@@ -133,7 +133,7 @@ class _CounterPageState extends State<CounterPage> {
                         style: TextStyle(
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
-                          fontSize: 100,
+                          fontSize: 64,
                           fontFamily: "IBM Plex Serif",
                         ),
                       ),
@@ -158,7 +158,7 @@ class _CounterPageState extends State<CounterPage> {
                         style: TextStyle(
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
-                          fontSize: 100,
+                          fontSize: 64,
                           fontFamily: "IBM Plex Serif",
                         ),
                       ),
@@ -180,7 +180,7 @@ class _CounterPageState extends State<CounterPage> {
                         style: TextStyle(
                           height: 1,
                           color: Color.fromARGB(255, 12, 12, 12),
-                          fontSize: 100,
+                          fontSize: 64,
                           fontFamily: "IBM Plex Serif",
                         ),
                       ),
